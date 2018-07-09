@@ -1,0 +1,49 @@
+#casssandra db
+
+
+#cretaing keyspace:
+
+cqlsh.> CREATE KEYSPACE prtk
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+
+cqlsh> DESCRIBE keyspaces;
+
+system_schema  system_auth  system  system_distributed  prtk  system_traces
+
+==============================================================
+
+#create table:
+
+   cqlsh> USE prtk;
+   
+cqlsh:prtk>; CREATE TABLE users(
+   id int PRIMARY KEY,
+   age varint,
+   email text,
+   name text
+
+   );
+   
+
+cqlsh:prtk> show table;
+Improper show command.
+cqlsh:prtk> desc tables
+
+user
+
+cqlsh:prtk> select * from user;
+
+ user_id | user_age | user_email | user_name
+---------+----------+------------+-----------
+
+(0 rows)
+cqlsh:prtk>
+==========================================================================
+
+
+
+
+
+
+
+
