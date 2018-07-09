@@ -1,6 +1,28 @@
 #casssandra db
 
+What is casssandra?
+Apache Cassandra is a free and open-source distributed wide column store NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients
 
+Main features:
+- Distributed
+   Every node in the cluster has the same role. There is no single point of failure. Data is distributed across the cluster (so each node contains different data), but there is no master as every node can service any request.
+- Supports replication and multi data center replication
+   Replication strategies are configurable. Cassandra is designed as a distributed system, for deployment of large numbers of nodes across multiple data centers. Key features of Cassandra’s distributed architecture are specifically tailored for multiple-data center deployment, for redundancy, for failover and disaster recovery.
+- Scalability
+   Designed to have read and write throughput both increase linearly as new machines are added, with the aim of no downtime or interruption to applications.
+- Fault-tolerant
+   Data is automatically replicated to multiple nodes for fault-tolerance. Replication across multiple data centers is supported. Failed nodes can be replaced with no downtime.
+- Tunable consistency
+   Cassandra is typically classified as an AP system, meaning that availability and partition tolerance are generally considered to be more important than consistency in Cassandra, Writes and reads offer a tunable level of consistency, all the way from "writes never fail" to "block for all replicas to be readable", with the quorum level in the middle.
+- MapReduce support
+   Cassandra has Hadoop integration, with MapReduce support. There is support also for Apache Pig and Apache Hive.[18]
+- Query language
+   Cassandra introduced the Cassandra Query Language (CQL). CQL is a simple interface for accessing Cassandra, as an alternative to the traditional Structured Query Language (SQL).
+   
+   
+   
+   
+====================================================================================================================================
 #cretaing keyspace:
 
 cqlsh.> CREATE KEYSPACE prtk
@@ -49,7 +71,14 @@ cqlsh:prtk>
 ==================================================
 
 Referecnce:
+https://en.wikipedia.org/wiki/Apache_Cassandra
+https://www.quora.com/What-are-advantages-and-disadvantages-of-Cassandra-database-You-know-I-need-these-parameters-Distribution-Replication-Object-Oriented-XML-and-unique-properties-of-it
+https://www.credera.com/blog/technology-insights/java/cassandra-explained-5-minutes-less/
+
+
 https://www.tutorialspoint.com/cassandra/cassandra_create_table.htm
 https://dzone.com/articles/first-steps-to-spring-boot-cassandra
 http://projects.spring.io/spring-data-cassandra/
 http://javasampleapproach.com/spring-framework/spring-mvc/angular-4-spring-boot-cassandra-crud-example
+
+
