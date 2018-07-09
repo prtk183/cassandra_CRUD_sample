@@ -46,4 +46,10 @@ cqlsh:prtk>
 
 
 
+==================================================
 
+Referecnce:
+https://www.tutorialspoint.com/cassandra/cassandra_create_table.htm
+https://dzone.com/articles/first-steps-to-spring-boot-cassandra
+http://projects.spring.io/spring-data-cassandra/
+http://javasampleapproach.com/spring-framework/spring-mvc/angular-4-spring-boot-cassandra-crud-example
