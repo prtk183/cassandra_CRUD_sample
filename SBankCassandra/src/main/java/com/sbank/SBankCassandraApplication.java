@@ -1,4 +1,4 @@
-package com.sbank.SBankCassandra;
+package com.sbank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
