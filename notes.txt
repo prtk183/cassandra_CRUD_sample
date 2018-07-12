@@ -3,6 +3,12 @@
 What is casssandra?
 Apache Cassandra is a free and open-source distributed wide column store NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients
 
+Cassandra in 50 Words or Less
+
+“Apache Cassandra is an open source, distributed, decentralized, elastically scalable, highly available, fault-tolerant, tuneably consistent, column-oriented database that
+ bases its distribution design on Amazon’s Dynamo and its data model on Google’s Bigtable. Created at Facebook, it is now used at some of the most popular sites on the
+ Web.” That’s exactly 50 words..:)
+
 Main features:
 - Distributed
    Every node in the cluster has the same role. There is no single point of failure. Data is distributed across the cluster (so each node contains different data), but there is no master as every node can service any request.
@@ -75,6 +81,7 @@ https://en.wikipedia.org/wiki/Apache_Cassandra
 https://www.quora.com/What-are-advantages-and-disadvantages-of-Cassandra-database-You-know-I-need-these-parameters-Distribution-Replication-Object-Oriented-XML-and-unique-properties-of-it
 https://www.credera.com/blog/technology-insights/java/cassandra-explained-5-minutes-less/
 
+#book: https://www.gocit.vn/files/Cassandra.The.Definitive.Guide-www.gocit.vn.pdf
 
 https://www.tutorialspoint.com/cassandra/cassandra_create_table.htm
 https://dzone.com/articles/first-steps-to-spring-boot-cassandra
