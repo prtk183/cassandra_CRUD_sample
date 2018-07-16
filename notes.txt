@@ -25,9 +25,9 @@ Main features:
    
    
  ***When to use Cassandra:[2]
-+ Being a part of the NoSQL family, Cassandra offers a solution for problems where one of your requirements is to have a very heavy write system and you want to have a quite responsive reporting system on top of that stored data. 
++ Being a part of the NoSQL family, Cassandra offers a solution for problems where one of your requirements is to have a very heavy write system and you want to have a quite responsive reporting system on top of that stored data.[2.b] 
 + highly available, partition tolerant[AP of CAP]
-
++ replication[2.c]
    
 ====================================================================================================================================
 #CommandsTutorial[4]
@@ -76,6 +76,7 @@ Referecnce:
 1 https://en.wikipedia.org/wiki/Apache_Cassandra
 2 a https://www.quora.com/What-are-advantages-and-disadvantages-of-Cassandra-database-You-know-I-need-these-parameters-Distribution-Replication-Object-Oriented-XML-and-unique-properties-of-it
  b http://blogs.shephertz.com/2015/04/22/why-cassandra-excellent-choice-for-realtime-analytics-workload/#
+ c http://qr.ae/TUIGWc
 3 https://www.credera.com/blog/technology-insights/java/cassandra-explained-5-minutes-less/
 
 4 https://www.tutorialspoint.com/cassandra/cassandra_create_table.htm
