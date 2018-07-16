@@ -1,13 +1,11 @@
 #casssandra db
 
 What is casssandra?
-Apache Cassandra is a free and open-source distributed wide column store NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients
+Apache Cassandra is a free and open-source distributed wide column store NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients[1]
 
 Cassandra in 50 Words or Less
-
-“Apache Cassandra is an open source, distributed, decentralized, elastically scalable, highly available, fault-tolerant, tuneably consistent, column-oriented database that
- bases its distribution design on Amazon’s Dynamo and its data model on Google’s Bigtable. Created at Facebook, it is now used at some of the most popular sites on the
- Web.” That’s exactly 50 words..:)
+“Apache Cassandra is an open source, distributed, decentralized, elastically scalable, highly available, fault-tolerant, tuneably consistent, column-oriented database that bases its distribution design on Amazon’s Dynamo and its data model on Google’s Bigtable. Created at Facebook, it is now used at some of the most popular sites on the
+ Web.” That’s exactly 50 words..:)[3]
 
 Main features:
 - Distributed
@@ -26,9 +24,13 @@ Main features:
    Cassandra introduced the Cassandra Query Language (CQL). CQL is a simple interface for accessing Cassandra, as an alternative to the traditional Structured Query Language (SQL).
    
    
-   
+ ***When to use Cassandra:[2]
++ Being a part of the NoSQL family, Cassandra offers a solution for problems where one of your requirements is to have a very heavy write system and you want to have a quite responsive reporting system on top of that stored data. 
++ highly available, partition tolerant[AP of CAP]
+
    
 ====================================================================================================================================
+#CommandsTutorial[4]
 #cretaing keyspace:
 
 cqlsh.> CREATE KEYSPACE prtk
@@ -69,23 +71,17 @@ cqlsh:prtk>
 ==========================================================================
 
 
-
-
-
-
-
-==================================================
-
 Referecnce:
-https://en.wikipedia.org/wiki/Apache_Cassandra
-https://www.quora.com/What-are-advantages-and-disadvantages-of-Cassandra-database-You-know-I-need-these-parameters-Distribution-Replication-Object-Oriented-XML-and-unique-properties-of-it
-https://www.credera.com/blog/technology-insights/java/cassandra-explained-5-minutes-less/
-
 #book: https://www.gocit.vn/files/Cassandra.The.Definitive.Guide-www.gocit.vn.pdf
+1 https://en.wikipedia.org/wiki/Apache_Cassandra
+2 a https://www.quora.com/What-are-advantages-and-disadvantages-of-Cassandra-database-You-know-I-need-these-parameters-Distribution-Replication-Object-Oriented-XML-and-unique-properties-of-it
+ b http://blogs.shephertz.com/2015/04/22/why-cassandra-excellent-choice-for-realtime-analytics-workload/#
+3 https://www.credera.com/blog/technology-insights/java/cassandra-explained-5-minutes-less/
 
-https://www.tutorialspoint.com/cassandra/cassandra_create_table.htm
-https://dzone.com/articles/first-steps-to-spring-boot-cassandra
-http://projects.spring.io/spring-data-cassandra/
-http://javasampleapproach.com/spring-framework/spring-mvc/angular-4-spring-boot-cassandra-crud-example
+4 https://www.tutorialspoint.com/cassandra/cassandra_create_table.htm
+
+5 https://dzone.com/articles/first-steps-to-spring-boot-cassandra
+6 http://projects.spring.io/spring-data-cassandra/
+7 http://javasampleapproach.com/spring-framework/spring-mvc/angular-4-spring-boot-cassandra-crud-example
 
 
